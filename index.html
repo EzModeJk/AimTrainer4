@@ -4,7 +4,7 @@
         <title>Aim Trainer Project</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="examples/main.css">
+        <link type="text/css" rel="stylesheet" href="/Aimtrainer3/examples/main.css">
         <style>
             #blocker {
                 position: absolute;
@@ -41,9 +41,9 @@
 
 <script type="module">
 	
-    import * as THREE from '../build/three.module.js';
+    import * as THREE from '/Aimtrainer4/build/three.module.js';
 
-    import { PointerLockControls } from '/examples/jsm/controls/PointerLockControls.js';
+    import { PointerLockControls } from '/Aimtrainer4/examples/jsm/controls/PointerLockControls.js';
 
 	
 //Get the height and the width of the window
@@ -355,7 +355,7 @@ const sound = new THREE.Audio( listener );
 
 // load a sound and set it as the Audio object's buffer
 const audioLoader = new THREE.AudioLoader();
-audioLoader.load( 'sound/hit.ogg', function( buffer ) {
+audioLoader.load( '/Aimtrainer3/sound/hit.ogg', function( buffer ) {
 	sound.setBuffer( buffer );
 	sound.setLoop( false );
 	sound.setVolume( 0.5 );
@@ -371,7 +371,7 @@ const sound2 = new THREE.Audio( listener2 );
 
 // load a sound and set it as the Audio object's buffer
 const audioLoader2 = new THREE.AudioLoader();
-audioLoader2.load( 'sound/miss.ogg', function( buffer ) {
+audioLoader2.load( '/Aimtrainer3/sound/miss.ogg', function( buffer ) {
 	sound2.setBuffer( buffer );
 	sound2.setLoop( false );
 	sound2.setVolume( 0.5 );
